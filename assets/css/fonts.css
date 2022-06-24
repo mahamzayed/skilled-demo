@@ -1,0 +1,17 @@
+@font-face {
+  font-family: Pacifico;
+  font-weight: 400;
+  src: url('~assets/fonts/Pacifico-Regular') format('woff2')
+}
+
+@font-face {
+  font-family: Outfit;
+  font-weight: 300;
+  src: url('~assets/fonts/Outfit-Regular') format('woff')
+}
+
+@font-face {
+  font-family: Outfit-Bold;
+  font-weight: 700;
+  src: url('~assets/fonts/Outfit-Bold') format('woff')
+}
