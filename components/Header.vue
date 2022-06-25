@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-row justify-between">
     <div class="text-4xl ml-10 mt-11 font-pacifico">Jane Doe</div>
-    <div class="mr-10 mt-11">
+    <div class="mr-10 mt-11 font-outfit text-2xl">
       <NuxtLink to="/">Home</NuxtLink>
       <NuxtLink to="/about">About</NuxtLink>
       <NuxtLink to="/portfolio">Portfolio</NuxtLink>

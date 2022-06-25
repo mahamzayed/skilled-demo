@@ -10,12 +10,15 @@ module.exports = {
     colors: {
       // Configure your color palette here
       'turquoise-blue': '#0E7490',
-      'cloudy-gray': '#6B7280'
+      'cloudy-gray': '#6B7280',
+      'black': '#000000',
+      'white': '#FFFFFF'
     },
     fontFamily: {
       pacifico: ["Pacifico"],
       outfit: ["Outfit"],
-      outfitbold: ["Outfit-Bold"]
+      outfitbold: ["Outfit-Bold"],
+      outfitmedium: ["Outfit-Medium"]
     },
   },
   plugins: [],

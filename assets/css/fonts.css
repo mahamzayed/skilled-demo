@@ -15,3 +15,9 @@
   font-weight: 700;
   src: url('~assets/fonts/Outfit-Bold') format('woff')
 }
+
+@font-face {
+  font-family: Outfit-Medium;
+  font-weight: 600;
+  src: url('~assets/fonts/Outfit-Medium') format('woff')
+}
