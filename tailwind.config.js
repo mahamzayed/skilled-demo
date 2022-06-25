@@ -18,7 +18,8 @@ module.exports = {
       pacifico: ["Pacifico"],
       outfit: ["Outfit"],
       outfitbold: ["Outfit-Bold"],
-      outfitmedium: ["Outfit-Medium"]
+      outfitmedium: ["Outfit-Medium"],
+      outfitsemibold: ["Outfit-SemiBold"]
     },
   },
   plugins: [],

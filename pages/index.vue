@@ -41,29 +41,64 @@
               Vulputate tristique porttitor enim aliquam ullamcorper. Velit dui
               laoreet in et mus.
             </p>
-            <button class="bg-black font-outfit text-white rounded-full py-2 px-6">Learn More</button>
+            <button
+              class="bg-black font-outfit text-white rounded-full py-2 px-6"
+            >
+              Learn More
+            </button>
           </div>
         </div>
       </div>
-      <div class="services-section">
-        <Services />
+      <div class="w-4/6 mt-24 ml-36">
+        <h2
+          class="text-cloudy-gray font-outfitmedium flex flex-row justify-center ml-36"
+        >
+          My Services
+        </h2>
+        <div v-for="service in servicesList" :key="service.id">
+          <Services :title="service.title" :content="service.content" />
+        </div>
+        <div class="hr-divider" />
+        <h3>My Work</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis
+          viverra mollis nisl dole dolorili tincidunt. Integer eget vitae id
+          tortor.
+        </p>
+        <PortfolioList />
       </div>
-      <div class="hr-divider" />
-      <h3>My Work</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis
-        viverra mollis nisl dole dolorili tincidunt. Integer eget vitae id
-        tortor.
-      </p>
-      <PortfolioList />
+      <Footer />
     </div>
-    <Footer />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HomePage'
+  name: 'HomePage',
+  data () {
+    return {
+      servicesList: [
+        {
+          id: 1,
+          title: 'UI/UX Design',
+          content:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis viverra mollis nisl dole dolorili tincidunt. Integer eget vitae id tortor.'
+        },
+        {
+          id: 2,
+          title: 'Web Development',
+          content:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis viverra mollis nisl dole dolorili tincidunt. Integer eget vitae id tortor.'
+        },
+        {
+          id: 3,
+          title: 'Product Strategy',
+          content:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis viverra mollis nisl dole dolorili tincidunt. Integer eget vitae id tortor.'
+        }
+      ]
+    }
+  }
 }
 </script>
 

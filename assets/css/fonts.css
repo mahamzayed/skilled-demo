@@ -21,3 +21,9 @@
   font-weight: 600;
   src: url('~assets/fonts/Outfit-Medium') format('woff')
 }
+
+@font-face {
+  font-family: Outfit-SemiBold;
+  font-weight: 500;
+  src: url('~assets/fonts/Outfit-SemiBold') format('woff')
+}
