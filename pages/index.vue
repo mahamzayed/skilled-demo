@@ -60,13 +60,13 @@
         </div>
       </div>
       <div class="hr-divider" />
-      <div class="w-4/6 mt-16 ml-60">
+      <div class="w-5/6 mt-16 ml-24">
         <h2
           class="text-cloudy-gray font-outfitmedium flex flex-row justify-center mb-10"
         >
           My Work
         </h2>
-        <p class="text-cloudy-gray font-outfit text-lg w-5/6 ml-28 mb-14">
+        <p class="text-cloudy-gray font-outfit text-lg w-5/6 ml-28 mb-7">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis
           viverra mollis nisl dole dolorili tincidunt. Integer eget vitae id
           tortor.
@@ -74,7 +74,7 @@
         <div
           v-for="portfolio in portfolioList"
           :key="portfolio.id"
-          class="mb-5"
+          class="mb-7"
         >
           <PortfolioList
             :title="portfolio.title"
