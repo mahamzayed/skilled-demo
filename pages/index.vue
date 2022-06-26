@@ -49,24 +49,42 @@
           </div>
         </div>
       </div>
-      <div class="w-4/6 mt-24 ml-36">
+      <div class="w-4/6 mt-24 ml-36 mb-20">
         <h2
-          class="text-cloudy-gray font-outfitmedium flex flex-row justify-center ml-36"
+          class="text-cloudy-gray font-outfitmedium flex flex-row justify-center ml-36 mb-10"
         >
           My Services
         </h2>
-        <div v-for="service in servicesList" :key="service.id">
+        <div v-for="service in servicesList" :key="service.id" class="mb-5">
           <Services :title="service.title" :content="service.content" />
         </div>
-        <div class="hr-divider" />
-        <h3>My Work</h3>
-        <p>
+      </div>
+      <div class="hr-divider" />
+      <div class="w-4/6 mt-16 ml-60">
+        <h2
+          class="text-cloudy-gray font-outfitmedium flex flex-row justify-center mb-10"
+        >
+          My Work
+        </h2>
+        <p class="text-cloudy-gray font-outfit text-lg w-5/6 ml-28 mb-14">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis
           viverra mollis nisl dole dolorili tincidunt. Integer eget vitae id
           tortor.
         </p>
-        <PortfolioList />
+        <div
+          v-for="portfolio in portfolioList"
+          :key="portfolio.id"
+          class="mb-5"
+        >
+          <PortfolioList
+            :title="portfolio.title"
+            :first-paragraph="portfolio.firstParagraph"
+            :second-paragraph="portfolio.secondParagraph"
+            :link="portfolio.link"
+          />
+        </div>
       </div>
+
       <Footer />
     </div>
   </div>
@@ -75,7 +93,7 @@
 <script>
 export default {
   name: 'HomePage',
-  data () {
+  data() {
     return {
       servicesList: [
         {
@@ -95,6 +113,35 @@ export default {
           title: 'Product Strategy',
           content:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis viverra mollis nisl dole dolorili tincidunt. Integer eget vitae id tortor.'
+        }
+      ],
+      portfolioList: [
+        {
+          id: 1,
+          title: 'Todo List Web App',
+          firstParagraph:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus mattis nunc aliquam tincidunt est non dolor sit consectuetur do.',
+          secondParagraph:
+            'Egestas dui id ornare arcu odio. Ornare lectus sit amet est placerat in egestas erat imperdiet.',
+          link: 'Read More...'
+        },
+        {
+          id: 2,
+          title: 'Dashboard Web App',
+          firstParagraph:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus mattis nunc aliquam tincidunt est non dolor sit consectuetur do.',
+          secondParagraph:
+            'Egestas dui id ornare arcu odio. Ornare lectus sit amet est placerat in egestas erat imperdiet.',
+          link: 'Read More...'
+        },
+        {
+          id: 3,
+          title: 'Task Manager App',
+          firstParagraph:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus mattis nunc aliquam tincidunt est non dolor sit consectuetur do.',
+          secondParagraph:
+            'Egestas dui id ornare arcu odio. Ornare lectus sit amet est placerat in egestas erat imperdiet.',
+          link: 'Read More...'
         }
       ]
     }

@@ -11,6 +11,7 @@ module.exports = {
       // Configure your color palette here
       'turquoise-blue': '#0E7490',
       'cloudy-gray': '#6B7280',
+      'light-gray': '#F3F4F6',
       'black': '#000000',
       'white': '#FFFFFF'
     },

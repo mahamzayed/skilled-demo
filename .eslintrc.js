@@ -12,7 +12,12 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
-    quotes: [2, "single"]
+    quotes: [2, "single"],
+    'space-before-function-paren': ['error', {
+      anonymous: 'always',
+      named: 'never',
+      asyncArrow: 'always'
+    }]
   },
   extends: [
     '@nuxtjs',
