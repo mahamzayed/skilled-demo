@@ -49,14 +49,16 @@
           </div>
         </div>
       </div>
-      <div class="w-4/6 mt-24 ml-36 mb-20">
+      <div class="w-5/6 mt-24 ml-32 mb-20">
         <h2
-          class="text-cloudy-gray font-outfitmedium flex flex-row justify-center ml-36 mb-10"
+          class="text-cloudy-gray font-outfitmedium flex flex-row justify-center mb-10 -ml-10"
         >
           My Services
         </h2>
-        <div v-for="service in servicesList" :key="service.id" class="mb-5">
-          <Services :title="service.title" :content="service.content" />
+        <div class="flex flex-row justify-between">
+          <div v-for="service in servicesList" :key="service.id" class="mb-5">
+            <Services :title="service.title" :content="service.content" />
+          </div>
         </div>
       </div>
       <div class="hr-divider" />

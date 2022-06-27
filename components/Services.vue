@@ -1,9 +1,11 @@
 <template>
-  <div class="bg-light-gray w-2/5 rounded-xl p-8">
-    <h2 class="text-turquoise-blue flex justify-center font-outfitmedium mb-4">
+  <div class="bg-light-gray rounded-xl mr-7 h-56 p-5">
+    <h2 class="text-turquoise-blue text-center font-outfitmedium mb-3">
       {{ title }}
     </h2>
-    <p class="text-cloudy-gray text-lg font-outfit text-center">{{ content }}</p>
+    <p class="text-cloudy-gray text-lg font-outfit text-center">
+      {{ content }}
+    </p>
   </div>
 </template>
 

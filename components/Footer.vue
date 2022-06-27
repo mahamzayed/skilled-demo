@@ -1,11 +1,11 @@
 <template>
   <div class="footer mt-16">
     <div class="flex flex-row mr-10">
-      <h2 class="flex-1 mt-12 mb-14 ml-16 font-pacifico text-4xl">Jane Doe</h2>
+      <h2 class="flex-1 mt-12 ml-16 font-pacifico text-4xl">Jane Doe</h2>
       <div
         v-for="img in imgLinks"
         :key="img.id"
-        class="flex flex-row mt-12 mb-14 mr-4"
+        class="flex flex-row mt-12 mb-4 mr-4"
       >
         <a href="#"><img class="w-14 h-14" :src="img.url" /></a>
       </div>
