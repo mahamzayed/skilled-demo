@@ -1,93 +1,46 @@
 <template>
   <div class="flex flex-col h-screen">
-    <Header />
     <div class="grow mt-20">
       <div>
-        <h2
-          class="flex flex-row justify-center mb-4 font-outfit text-cloudy-gray"
-        >
-          Hey there, I'm Jane
-        </h2>
-        <h1
-          class="flex flex-row justify-center font-outfitbold text-turquoise-blue"
-        >
-          I love building and designing
-        </h1>
-        <h1
-          class="flex flex-row justify-center font-outfitbold text-turquoise-blue mb-10"
-        >
-          things for the web.
-        </h1>
+        <h2>Hey there, I'm Jane</h2>
+        <h1>I love building and designing</h1>
+        <h1>things for the web.</h1>
       </div>
       <hr class="hr-divider" />
 
-      <div class="w-4/6 ml-36">
-        <div class="grid grid-cols-2 gap-2 mt-16">
-          <img
-            class="w-64 h-64 ml-48"
-            src="../assets/images/home-image.png"
-            alt="About Me Image"
-          />
+      <div>
+        <div>
           <div class="about-content">
-            <h2 class="text-turquoise-blue font-outfitmedium mb-4">
-              A Little About Me
-            </h2>
-            <p class="font-outfit text-cloudy-gray text-lg mb-3.5">
+            <h2>A Little About Me</h2>
+            <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus
               mattis nunc aliquam tincidunt est non. Viverra nec eu, in
               ridiculus egestas mi.
             </p>
-            <p class="font-outfit text-cloudy-gray text-lg mb-3.5">
+            <p>
               Vulputate tristique porttitor enim aliquam ullamcorper. Velit dui
               laoreet in et mus.
             </p>
-            <button
-              class="bg-black font-outfit text-white rounded-full py-2 px-6"
-            >
-              Learn More
-            </button>
+            <button>Learn More</button>
           </div>
         </div>
       </div>
-      <div class="w-5/6 mt-24 ml-32 mb-20">
-        <h2
-          class="text-cloudy-gray font-outfitmedium flex flex-row justify-center mb-10 -ml-10"
-        >
-          My Services
-        </h2>
-        <div class="flex flex-row justify-between">
-          <div v-for="service in servicesList" :key="service.id" class="mb-5">
-            <Services :title="service.title" :content="service.content" />
-          </div>
+      <div>
+        <h2>My Services</h2>
+        <div>
+          <div>My services section</div>
         </div>
       </div>
       <div class="hr-divider" />
-      <div class="w-5/6 mt-16 ml-24">
-        <h2
-          class="text-cloudy-gray font-outfitmedium flex flex-row justify-center mb-10"
-        >
-          My Work
-        </h2>
-        <p class="text-cloudy-gray font-outfit text-lg w-5/6 ml-28 mb-7">
+      <div>
+        <h2>My Work</h2>
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis
           viverra mollis nisl dole dolorili tincidunt. Integer eget vitae id
           tortor.
         </p>
-        <div
-          v-for="portfolio in portfolioList"
-          :key="portfolio.id"
-          class="mb-7"
-        >
-          <PortfolioList
-            :title="portfolio.title"
-            :first-paragraph="portfolio.firstParagraph"
-            :second-paragraph="portfolio.secondParagraph"
-            :link="portfolio.link"
-          />
-        </div>
+        <div>My work section</div>
       </div>
-
-      <Footer />
     </div>
   </div>
 </template>
@@ -152,10 +105,10 @@ export default {
 </script>
 
 <style type="scss" scoped>
-.hr-divider {
+/* .hr-divider {
   border: solid 3px black;
   width: 40%;
   transform: rotate(3deg);
   margin: auto;
-}
+} */
 </style>
