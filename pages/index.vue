@@ -105,10 +105,10 @@ export default {
 </script>
 
 <style type="scss" scoped>
-/* .hr-divider {
+.hr-divider {
   border: solid 3px black;
   width: 40%;
   transform: rotate(3deg);
   margin: auto;
-} */
+}
 </style>
