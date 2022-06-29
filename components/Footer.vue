@@ -3,7 +3,7 @@
     <div class="flex flex-row justify-between">
       <div class="mt-12 mb-14 ml-16 font-pacifico text-4xl">Jane Doe</div>
       <div class="footer-social-icons mt-12 mb-14 mr-16">
-        <FacebookLogo />
+       icons go here
       </div>
     </div>
     <div class="w-3/6 ml-16 mb-12">
@@ -20,12 +20,8 @@
 </template>
 
 <script>
-import FacebookLogo from '~/assets/icons/fb_icon.svg'
 export default {
-  name: 'FooterComponent',
-  components: {
-    FacebookLogo
-  }
+  name: 'FooterComponent'
 }
 </script>
 
