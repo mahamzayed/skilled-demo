@@ -75,7 +75,7 @@
           :key="portfolio.id"
           class="mb-7"
         >
-          <PortfolioList
+          <Portfolio
             :title="portfolio.title"
             :first-paragraph="portfolio.firstParagraph"
             :second-paragraph="portfolio.secondParagraph"
