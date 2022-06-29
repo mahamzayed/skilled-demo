@@ -94,6 +94,12 @@
 
 <script>
 export default {
+  async asyncData({ $content }) {
+    const page = await $content('hello').fetch()
+    return {
+      page
+    }
+  },
   name: 'HomePage',
   data() {
     return {
