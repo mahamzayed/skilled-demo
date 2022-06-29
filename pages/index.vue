@@ -30,16 +30,13 @@
           />
           <div class="about-content">
             <h2 class="text-turquoise-blue font-outfitmedium mb-4">
-              A Little About Me
+              {{ page.title }}
             </h2>
             <p class="font-outfit text-cloudy-gray text-lg mb-3.5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus
-              mattis nunc aliquam tincidunt est non. Viverra nec eu, in
-              ridiculus egestas mi.
+              {{ page.subtitle }}
             </p>
             <p class="font-outfit text-cloudy-gray text-lg mb-3.5">
-              Vulputate tristique porttitor enim aliquam ullamcorper. Velit dui
-              laoreet in et mus.
+              {{ page.description }}
             </p>
             <button
               class="bg-black font-outfit text-white rounded-full py-2 px-6"
@@ -95,7 +92,7 @@
 <script>
 export default {
   async asyncData({ $content }) {
-    const page = await $content('hello').fetch()
+    const page = await $content('about').fetch()
     return {
       page
     }
